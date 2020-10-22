@@ -1,0 +1,36 @@
+.index-header {
+    background: url(../images/index/header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.futbol-header {
+    background: url(../images/futbol/header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.americano-header {
+    background: url(../images/americano/header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.boxeo-header {
+    background: url(../images/boxeo/header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.about-header {
+    background: url(../images/otros/about/header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.money-header {
+    background: url(../images/otros/money/header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.user-header {
+    background: url(../images/otros/user/header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+

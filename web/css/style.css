@@ -1,0 +1,307 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+/* ------------------------------------------ */
+.two-columns {
+    width: 1100px;
+    display: table;
+}
+
+.two-columns .column {
+    width: 50%;
+    float: left;
+    height: 100%;
+    display: table-row;
+}
+
+.three-columns {
+    width: 1100px;
+    display: table;
+}
+
+.three-columns .column {
+    width: 33%;
+    float: left;
+    height: 100%;
+    display: table-row;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text {
+    width: 70%;
+    display: inline-block;
+    text-align: justify;
+}
+
+.image {
+    width: 70%;
+}
+/* ------------------------------------------ */
+.two-columns .column .container {
+    height: 100px;
+    width: 90%;
+    margin: 5px 5%;
+    border-style: solid;
+    border-color: rgb(170, 170, 170);
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgb(170, 170, 170);
+    background: rgb(230, 230, 230);
+}
+
+.two-columns .column .container .overlay {
+    border-radius: 9px;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: background-color 0.2s;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.two-columns .column .container .overlay:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.mas-partidos {
+    text-align: center;
+}
+
+.mas-partidos a {
+    color: rgb(50, 50, 50);
+}
+
+.mas-partidos a:hover {
+    color: rgb(80, 80, 80);
+}
+
+.futbol-style .column .container {
+    background-image: url(../images/futbol/container.jpg);
+}
+
+.americano-style .column .container {
+    background-image: url(../images/americano/container.jpg);
+}
+
+.boxeo-style .column .container {
+    background-image: url(../images/boxeo/container.jpg);
+}
+
+
+.match-header .match-league {
+    position: absolute;
+    left: 0;
+    margin: 0 10px;
+}
+
+.match-header .match-date {
+    position: absolute;
+    right: 0;
+    margin: 0 10px;
+}
+
+.match-header {
+    height: 15%;
+    text-align: left;
+    font-size: 0.85em;
+    font-weight: bold;
+    position: relative;
+}
+
+.match {
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+}
+
+.match .visible-info {
+    float: left;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    margin: 0 15px;
+}
+
+.match .visible-info .team-info {
+    text-align: center;
+    padding: 0 5px;
+    width: 120px;
+}
+
+.match .visible-info .team-one-image,
+.match .visible-info .team-two-image{
+    width: 70px;
+    -webkit-filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+    filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+}
+
+.match .visible-info .team-info .team-one-name,
+.match .visible-info .team-info .team-two-name {
+    overflow-wrap: break-word;
+    max-width: 120px;
+    font-weight: 900;
+}
+
+.match .visible-info .team-info .team-one-multiplier,
+.match .visible-info .team-info .team-two-multiplier{
+    font-weight: 600;
+}
+
+.match .hidden-info {
+    display: none;
+}
+
+
+
+.betting-overlay,
+.login-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 50px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.betting-overlay .window {
+    width: 950px;
+    height: 550px;
+    background-color: rgb(245, 245, 245);
+    margin: auto;
+    box-shadow: 0 0 10px rgb(120, 120, 120);
+}
+
+.betting-overlay .window .top {
+    height: 5%;
+    background-color: rgb(81, 122, 226);
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.betting-overlay .window .top .close-icon {
+    position: absolute;
+    right: 0;
+    color: rgb(255, 255, 255);
+}
+
+.betting-overlay .window .top .close-icon:hover {
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.betting-overlay .window .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+}
+
+.betting-overlay .window .header .team {
+    text-align: center;
+    width: 220px;
+}
+
+.betting-overlay .window .header .team .team-name {
+    font-weight: 800;
+    text-shadow: 0px 0px 1px rgb(255, 255, 255);
+    font-size: 2em;
+    overflow-wrap: break-word;
+}
+
+.betting-overlay .window .header .team .team-multiplier,
+.betting-overlay .window .header div .vs-text {
+    font-weight: 600;
+    text-shadow: 0px 0px 1px rgb(255, 255, 255);
+    font-size: 1.4em;
+}
+
+.betting-overlay .window .header div {
+    float: left;
+    margin: 0 15px;
+}
+
+.betting-overlay .window .header div .image {
+    width: 150px;
+}
+
+.betting-overlay .window hr {
+    color: rgb(81, 122, 226);
+}
+
+.betting-overlay .window .select-team {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.betting-overlay .window .select-team .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.betting-overlay .window .bet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 7%;
+}
+
+.betting-overlay .window .bet div {
+    height: 100%;
+    margin: 0 40px;
+}
+
+.betting-overlay .window .bet-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.betting-overlay .window .bet-button .button {
+    padding: 15px 80px;
+}
+    
+.login-overlay .window {
+    width: 300px;
+    padding: 0 50px;
+    height: 300px;
+    background-color: rgb(245, 245, 245);
+    margin: auto;
+    box-shadow: 0 0 10px rgb(120, 120, 120);
+    text-align: center;
+    border: 10px solid rgb(81, 122, 226);
+}
+
+.login-overlay .window .text {
+    width: 100%;
+}
+
+.login-overlay .window .button {
+    width: 80%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+

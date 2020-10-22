@@ -1,0 +1,64 @@
+<script src="js/jquery-ui-elements/sidebar.js" type="text/javascript"></script>
+
+<div class="sidebar" id="sidebar" style="display:none;">
+    <div class="container">
+        
+        <h1 class="title">¡Bienvenido a ApuExpress!</h1>
+        
+        <form action="/ApuExpress/crear_usuario.htm" method="POST">
+            <label for="sidebar-name">Nombre:</label><br>
+            <input class="ui-spinner ui-corner-all ui-widget ui-widget-content
+                   ui-spinner-input input-text" id="sidebar-name"type="text" name="nombre">
+            <br>
+
+            <label for="sidebar-lastname">Apellido:</label><br>
+            <input class="ui-spinner ui-corner-all ui-widget ui-widget-content
+                   ui-spinner-input input-text" id="sidebar-lastname"type="text" name="apellido">
+            <br>
+
+            <label for="sidebar-username">Nombre de usuario:</label><br>
+            <input class="ui-spinner ui-corner-all ui-widget ui-widget-content
+                   ui-spinner-input input-text" id="sidebar-username"type="text" name="username">
+            <br>
+
+            <label for="sidebar-email">Correo electrónico:</label><br>
+            <input class="ui-spinner ui-corner-all ui-widget ui-widget-content
+                   ui-spinner-input input-text" id="sidebar-email"type="text" name="correo">
+            <br>
+
+            <label for="sidebar-password">Contraseña:</label><br>
+            <input class="ui-spinner ui-corner-all ui-widget ui-widget-content
+                   ui-spinner-input input-text" id="sidebar-password"type="password" name="contrasena">
+            <br><br>
+
+            <div id="sidebar-accept">
+                <label for="sidebar-accept-checkbox">Acepto los <u>Términos y Condiciones</u></label>
+                <input type="checkbox" id="sidebar-accept-checkbox">
+            </div>
+            <br><br>
+
+            <input type="submit" id="sidebar-submit-button" value="Crear cuenta"> 
+        </form>
+        <p class="sidebar-login">¿Ya tienes cuenta? <a href="#" id="login-label">Inicia sesión</a></p>
+        
+    </div>
+</div>
+
+<div class="login-overlay" id="login-overlay">
+            <div class="window">
+                <h1>Iniciar sesion</h1>
+                <form action="/ApuExpress/iniciar_sesion.htm" method="POST">
+                    <label for="login-username">Nombre de usuario:</label><br>
+                    <input class="ui-spinner ui-corner-all ui-widget ui-widget-content
+                        ui-spinner-input text" id="login-username"type="text" name="username">
+                    <br><br>
+
+                    <label for="login-password">Contraseña:</label><br>
+                    <input class="ui-spinner ui-corner-all ui-widget ui-widget-content
+                        ui-spinner-input text" id="login-password"type="password" name="contrasena">
+                    <br><br>
+
+                    <input class="button" type="submit" id="login-submit-button" value="Iniciar sesión"> 
+                </form>
+            </div>
+</div>

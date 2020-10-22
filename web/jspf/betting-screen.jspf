@@ -1,0 +1,65 @@
+<%@ page pageEncoding="UTF-8" %>
+<script src="js/jquery-ui-elements/betting-screen.js" type="text/javascript"></script>
+
+<div class="betting-overlay" id="betting-screen">
+    
+    <div class="window">
+        <div class="top">
+            <span>&ensp;</span>
+            <span class="league"></span>
+            <span>&ensp;-&ensp;</span>
+            <span class="date"></span>
+            <i class="material-icons close-icon">close</i>
+        </div>
+        <div class="header">
+            <div class="team">
+                <span class="team-name" id="team-one-name"></span><br>
+                <span class="team-multiplier" id="team-one-multiplier"></span>
+            </div>
+            <div class="team-one-image">
+                
+            </div>
+            <div>
+                <span class="vs-text">VS</span>
+            </div>
+            <div class="team-two-image">
+                
+            </div>
+            <div class="team">
+                <span class="team-name" id="team-two-name"></span><br>
+                <span class="team-multiplier" id="team-two-multiplier"></span>
+            </div>
+        </div>
+        <hr noshade style="margin: 0;">
+        <div class="two-columns select-team">
+            <div class="column">
+                <label for="radio-team-one">Escoger este equipo</label>
+                <input type="radio" id="radio-team-one" name="choose-team">
+            </div>
+            <div class="column">
+                <label for="radio-team-two">Escoger este equipo</label>
+                <input type="radio" id="radio-team-two" name="choose-team">
+            </div>
+        </div>
+        <hr noshade style="margin: 0;">
+        <div class="bet">
+            <div>
+                <label for="betting-amount">Ingrese la cantidad a apostar:</label><br>
+                <input class="ui-spinner ui-corner-all ui-widget ui-widget-content
+                    ui-spinner-input input-text" id="betting-amount"type="text">
+            </div>
+            <div>
+                <label for="betting-max">La cantidad máxima a ganar:</label><br>
+                <input class="ui-spinner ui-corner-all ui-widget ui-widget-content
+                    ui-spinner-input input-text" id="betting-max"type="text" disabled="disabled">
+            </div>
+            
+        <br>
+        </div>
+        <div class="bet-button">
+            <input class="button" type="button" id="betting-submit" value="¡Apostar!"> 
+        </div>
+        
+    </div>
+
+</div>

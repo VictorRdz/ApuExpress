@@ -1,0 +1,48 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="footer">
+    <div class="top">
+        <div class="column">
+            <div class="link">
+                <h3 class="title">Información</h3>
+                <a href="about.htm"><p><i class="material-icons">people</i>
+                        Acerca de nosotros</p></a>
+                <a href="#"><p><i class="material-icons">school</i>
+                        Este es un enlace</p></a>
+                <a href="#"><p><i class="material-icons">android</i>
+                        Este es un enlace</p></a>
+                <a href="#"><p><i class="material-icons">build</i>
+                        Este es un enlace</p></a>
+                <a href="#"><p><i class="material-icons">help</i>
+                        Este es un enlace</p></a>
+            </div>
+        </div>
+        <div class="column">
+            <div class="link">
+                <h3 class="title">Deportes</h3>
+                <a href="futbol.htm"><p><i class="material-icons">star</i>
+                        Futbol</p></a>
+                <a href="americano.htm"><p><i class="material-icons">star</i>
+                        Americano</p></a>
+                <a href="boxeo.htm"><p><i class="material-icons">star</i>
+                        Boxeo</p></a>
+            </div>
+        </div>
+        <div class ="column">
+            <div class="link">
+                <h3 class="title">Categoria 3</h3>
+                <a href="deposit.htm"><p><i class="material-icons">monetization_on</i>
+                        Depositar</p></a>
+                <a href="withdraw.htm"><p><i class="material-icons">monetization_on</i>
+                        Retirar</p></a>
+                <a href="#"><p><i class="material-icons">equalizer</i>
+                        Este es un enlace</p></a>
+                <a href="#"><p><i class="material-icons">info</i>
+                        Este es un enlace</p></a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <p>&copy 2018 ApuExpress. Todos los derechos reservados.</p>
+    </div>
+</div>
